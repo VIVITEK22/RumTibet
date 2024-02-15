@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/none_style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="back__dark"></div>
+        <header class="header">
+            <div class="container">
+                <div class="header__top">
+                    <div class="header__nav-logo">
+                        <img src="img/logo.svg" alt="logo" class="header__nav-img">
+                    </div>
+                    <div class="header__nav-burger">
+                        <img src="img/burger.svg" alt="burger">
+                    </div>
+                    <nav class="header__nav">
+                        <ul class="header__nav-list">
+                            <li class="header__nav-item"><a class="header__nav-link" href="#">Главная</a></li>
+                            <li class="header__nav-item"><a class="header__nav-link" href="#">Про гида</a></li>
+                            <li class="header__nav-item"><a class="header__nav-link" href="#">Программа тура</a></li>
+                            <li class="header__nav-item"><a class="header__nav-link" href="#">Стоимость</a></li>
+                            <li class="header__nav-item"><a class="header__nav-link" href="#">Блог</a></li>
+                            <li class="header__nav-item"><a class="header__nav-link" href="#">Контакты</a></li>
+                            <li class="header__nav-btn">
+                                <a class="header__nav-link btn-min" href="#">Консультация</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="header__body">
+                <div class="container">
+                    <h1 class="header__body-title">
+                        Насладись прогулкой в горах
+                        с командой единомышленников
+                    </h1>
+                    <form name="programm" class="header__body-form">
+                        <ul class="header__body-list">
+                            <li class="header__body-item">
+                                <select name="location" id="location" class="header__body-input">
+                                    <option value="no-value" class="header__body-option">Локация для тура</option>
+                                    <option value="val1" class="header__body-option">Локация 1</option>
+                                    <option value="val2" class="header__body-option">Локация 2</option>
+                                    <option value="val3" class="header__body-option">Локация 3</option>
+                                </select><br>
+                                <label class="header__body-desc">выберите из списка</label>
+                            </li>
+                            <li class="header__body-item">
+                                <input type="date" name="date" value="Дата похода" class="header__body-input"><br>
+                                <label class="header__body-desc">укажите диапазон</label>
+                            </li>
+                            <li class="header__body-item">
+                                <select name="users" id="users" class="header__body-input">
+                                    <option value="placholder" class="header__body-option">Участники</option>
+                                    <option value="4" class="header__body-option">4</option>
+                                    <option value="5" class="header__body-option">5</option>
+                                    <option value="6" class="header__body-option">6</option>
+                                    <option value="7" class="header__body-option">7</option>
+                                    <option value="8" class="header__body-option">8</option>
+                                    <option value="9" class="header__body-option">9</option>
+                                    <option value="10" class="header__body-option">10</option>
+                                </select><br>
+                                <label class="header__body-desc">минимум 4 человека</label>
+                            </li>
+                            <li class="header__body-item"><button type="submit"
+                                    class="header__body-btn btn-outline">Найти программу</button></li>
+                        </ul>
+                    </form>
+                    <a class="header__btn btn-outline" href="#">Найти программу</a>
+                </div>
+            </div>
+        </header>
+        <main class="main">
+            <section class="info">
+                <div class="container">
+                    <div class="info__inner">
+                        <div class="info__images">
+                            <img src="img/info/info_img.jpeg" alt="left_image" class="info__img-left info__img">
+                            <img src="img/info/info_img2.jpeg" alt="right_image" class="info__img-right info__img">
+                        </div>
+                        <div class="info__body">
+                            <h4 class="info__sub-title sub-title">о нашем походе</h4>
+                            <h2 class="info__title title">Исследуйте все горные массивы мира вместе с нами</h2>
+                            <p class="info__text text">Его корни уходят в один фрагмент классической латыни 45 года
+                                н.э., то
+                                есть более двух тысячелетий назад. Ричард МакКлинток, профессор латыни из колледжа
+                                Hampden-Sydney, штат Вирджиния, взял одно из самых странных слов в Lorem Ipsum,
+                                "consectetur"и занялся его поисками в классической латинской литературе.</p>
+                            <div class="info__button"><a class="info__btn btn-max" href="#">Программа тура</a></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="programm">
+                <div class="container">
+                    <div class="programm__inner">
+                        <div class="programm__body">
+                            <h4 class="programm__sub-title sub-title">наше предложение</h4>
+                            <h2 class="programm__title title">Лучшие программы для тебя</h2>
+                            <p class="programm__text text">Его корни уходят в один фрагмент классической латыни 45 года
+                                н.э., то есть более двух тысячелетий назад. Ричард МакКлинток, профессор латыни из
+                                колледжа.</p>
+                            <ul class="programm__list">
+                                <li class="programm__item">
+                                    <img src="img/programm-icons/icon1.svg" alt="" class="programm__item-icon">
+                                    <div class="programm__item-body">
+                                        <h4 class="programm__item-title">Опытный гид</h4>
+                                        <p class="programm__item-text">Для современного мира базовый вектор развития
+                                            предполагает независимые способы реализации соответствующих условий
+                                            активизации.</p>
+                                    </div>
+                                </li>
+                                <li class="programm__item">
+                                    <img src="img/programm-icons/icon2.svg" alt="" class="programm__item-icon">
+                                    <div class="programm__item-body">
+                                        <h4 class="programm__item-title">Безопасный поход</h4>
+                                        <p class="programm__item-text">Для современного мира базовый вектор развития
+                                            предполагает независимые способы реализации соответствующих условий
+                                            активизации.</p>
+                                    </div>
+                                </li>
+                                <li class="programm__item">
+                                    <img src="img/programm-icons/icon3.svg" alt="" class="programm__item-icon">
+                                    <div class="programm__item-body">
+                                        <h4 class="programm__item-title">Лояльные цены</h4>
+                                        <p class="programm__item-text">Для современного мира базовый вектор развития
+                                            предполагает независимые способы реализации соответствующих условий
+                                            активизации.</p>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="programm__button"><a class="programm__btn btn-max" href="#">Стоимость
+                                    программ</a></div>
+                        </div>
+                        <div class="programm__images">
+                            <img src="img/programm-image/image1.jpeg" alt="image-one"
+                                class="programm__image border-right">
+                            <img src="img/programm-image/image2.jpeg" alt="image-one"
+                                class="programm__image border-left">
+                            <img src="img/programm-image/image3.jpeg" alt="image-one"
+                                class="programm__image border-left">
+                            <img src="img/programm-image/image4.jpeg" alt="image-one"
+                                class="programm__image border-right">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="popular">
+                <div class="container">
+                    <div class="popular__inner">
+                        <h4 class="popular__sub-title sub-title">по версии отдыхающих</h4>
+                        <h2 class="popular__title title">Популярные направления</h2>
+                        <div class="popular__slider swiper">
+                            <ul class="popular__list swiper-wrapper">
+                                <li class="popular__item swiper-slide">
+                                    <div class="popular__card popular__card--1">
+                                        <div class="popular__card-rating">
+                                            <img src="img/popular/star.svg" alt="" class="popular__card-icon">
+                                            <span>4.9</span>
+                                        </div>
+                                        <div class="popular__card-body">
+                                            <div class="popular__card-text">
+                                                <p class="popular__card-title">Озеро возле гор</p>
+                                                <p class="popular__card-desc">романтическое приключение</p>
+                                            </div>
+                                            <div class="popular__card-price">480 $</div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="popular__item swiper-slide">
+                                    <div class="popular__card popular__card--2">
+                                        <div class="popular__card-rating">
+                                            <img src="img/popular/star.svg" alt="" class="popular__card-icon">
+                                            <span>4.9</span>
+                                        </div>
+                                        <div class="popular__card-body">
+                                            <div class="popular__card-text">
+                                                <p class="popular__card-title">Ночь в горах</p>
+                                                <p class="popular__card-desc">в компании друзей</p>
+                                            </div>
+                                            <div class="popular__card-price">500 $</div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="popular__item swiper-slide">
+                                    <div class="popular__card popular__card--3">
+                                        <div class="popular__card-rating">
+                                            <img src="img/popular/star.svg" alt="" class="popular__card-icon">
+                                            <span>4.9</span>
+                                        </div>
+                                        <div class="popular__card-body">
+                                            <div class="popular__card-text">
+                                                <p class="popular__card-title">Йога в горах</p>
+                                                <p class="popular__card-desc">для тех, кто забоится о себе</p>
+                                            </div>
+                                            <div class="popular__card-price">230 $</div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="popular__button"><a class="popular__btn btn-max" href="#">Рейтинг направлений</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="blog">
+                <div class="container">
+                    <div class="blog__inner">
+                        <h4 class="blog__sub-title sub-title">делимся впечатлениями</h4>
+                        <h2 class="blog__title title">Блог о путешествиях</h2>
+                        <div class="blog__body swiper">
+                            <ul class="blog__list swiper-wrapper">
+                                <li class="blog__item swiper-slide">
+                                    <a class="blog__card" href="#">
+                                        <div class="blog__card-image">
+                                            <img src="img/blog/image1.jpeg" alt="Italy" class="blog__card-img">
+                                        </div>
+                                        <div class="blog__image--min">
+                                            <img src="img/blog/image1min.jpeg" alt="Italy" class="blog__card-img">
+                                        </div>
+                                        <div class="blog__card-body">
+                                            <div class="blog__card-content">
+                                                <div class="blog__card-title">Красивая Италя, какая она в реальности?</div>
+                                                <p class="blog__card-info">Для современного мира базовый вектор развития
+                                                    предполагает независимые способы реализации соответствующих условий
+                                                    активизации.
+                                                </p>
+                                            </div>
+                                            <div class="blog__card-bottom">
+                                                <span class="blog__card-date">01/04/2023</span>
+                                                <span class="blog__card-text">читать статью</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="blog__item swiper-slide">
+                                    <a class="blog__card" href="#">
+                                        <div class="blog__card-image">
+                                            <img src="img/blog/image2.jpeg" alt="fly" class="blog__card-img">
+                                        </div>
+                                        <div class="blog__image--min">
+                                            <img src="img/blog/image2min.jpeg" alt="Italy" class="blog__card-img">
+                                        </div>
+                                        <div class="blog__card-body">
+                                            <div class="blog__card-content">
+                                                <div class="blog__card-title">Долой сомнения! Весь мир открыт для вас!</div>
+                                                <p class="blog__card-info">Для современного мира базовый вектор развития
+                                                    предполагает независимые способы реализации соответствующих условий
+                                                    активизации ...
+                                                </p>
+                                            </div>
+                                            <div class="blog__card-bottom">
+                                                <span class="blog__card-date">01/04/2023</span>
+                                                <span class="blog__card-text">читать статью</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="blog__item swiper-slide">
+                                    <a class="blog__card" href="#">
+                                        <div class="blog__card-image">
+                                            <img src="img/blog/image3.jpeg" alt="solo-travel" class="blog__card-img">
+                                        </div>
+                                        <div class="blog__image--min">
+                                            <img src="img/blog/image3min.jpeg" alt="Italy" class="blog__card-img">
+                                        </div>
+                                        <div class="blog__card-body">
+                                            <div class="blog__card-content">
+                                                <div class="blog__card-title">Как подготовиться к путешествию в одиночку?
+                                                </div>
+                                                <p class="blog__card-info">Для современного мира базовый вектор развития
+                                                    предполагает.</p>
+                                            </div>
+                                            <div class="blog__card-bottom">
+                                                <span class="blog__card-date">01/04/2023</span>
+                                                <span class="blog__card-text">читать статью</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="blog__item swiper-slide">
+                                    <a class="blog__card" href="#">
+                                        <div class="blog__card-image">
+                                            <img src="img/blog/image4.jpeg" alt="India" class="blog__card-img">
+                                        </div>
+                                        <div class="blog__image--min">
+                                            <img src="img/blog/image4min.jpeg" alt="Italy" class="blog__card-img">
+                                        </div>
+                                        <div class="blog__card-body">
+                                            <div class="blog__card-content">
+                                                <div class="blog__card-title">Индия ... летим?</div>
+                                                <p class="blog__card-info">Для современного мира базовый.</p>
+                                            </div>
+                                            <div class="blog__card-bottom">
+                                                <span class="blog__card-date">01/04/2023</span>
+                                                <span class="blog__card-text">читать статью</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="blog__btn"><a class="btn-max" href="#">Другие материалы</a></div>
+                    </div>
+                </div>
+            </section>
+            <section class="photo">
+                <div class="container">
+                    <div class="photo__inner">
+                        <h4 class="photo__sub-title sub-title">фото-отчет</h4>
+                        <h2 class="photo__title title">Делимся впечатлениями</h2>
+                        <ul class="photo__body">
+                            <li class="photo__item">
+                                <img src="img/photo/image1.jpeg" alt="" class="photo__item-img">
+                            </li>
+                            <li class="photo__item">
+                                <img src="img/photo/image2.jpeg" alt="" class="photo__item-img">
+                            </li>
+                            <li class="photo__item">
+                                <img src="img/photo/image3.jpeg" alt="" class="photo__item-img">
+                            </li>
+                            <li class="photo__item">
+                                <img src="img/photo/image4.jpeg" alt="" class="photo__item-img">
+                            </li>
+                            <li class="photo__item">
+                                <img src="img/photo/image5.jpeg" alt="" class="photo__item-img">
+                            </li>
+                            <li class="photo__item">
+                                <img src="img/photo/image6.jpeg" alt="" class="photo__item-img">
+                            </li>
+                        </ul>
+                        <div class="photo__swiper swiper">
+                            <ul class="photo__list swiper-wrapper">
+                                <li class="photo__item swiper-slide">
+                                    <img src="img/photo/image1min.jpeg" alt="" class="photo__item-img">
+                                </li>
+                                <li class="photo__item swiper-slide">
+                                    <img src="img/photo/image2min.jpeg" alt="" class="photo__item-img">
+                                </li>
+                                <li class="photo__item swiper-slide">
+                                    <img src="img/photo/image3min.jpeg" alt="" class="photo__item-img">
+                                </li>
+                                <li class="photo__item swiper-slide">
+                                    <img src="img/photo/image4min.jpeg" alt="" class="photo__item-img">
+                                </li>
+                                <li class="photo__item swiper-slide">
+                                    <img src="img/photo/image5min.jpeg" alt="" class="photo__item-img">
+                                </li>
+                                <li class="photo__item swiper-slide">
+                                    <img src="img/photo/image6min.jpeg" alt="" class="photo__item-img">
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="photo__btn"><a class="btn-max" href="#">Наш pinterest</a></div>
+                        <div class="photo__mailings">
+                            <div class="photo__mailings-left">
+                                <h4 class="photo__mailings-sub-title sub-title">актуально</h4>
+                                <h2 class="photo__mailings-title title">Получайте полезные рассылки о путешествиях</h2>
+                            </div>
+                            <div class="photo__mailings-right">
+                                <form action="mailings" class="photo__form">
+                                    <label class="photo__form-title">Введите e-mail адрес</label>
+                                    <div class="photo__input-group">
+                                        <input type="email" placeholder="name@domain.com" class="photo__form-input"
+                                            name="mailings-email">
+                                        <button class="photo__form-btn btn-min" type="submit">Подписаться на
+                                            новости</button>
+                                    </div>
+                                    <label class="photo__form-desc">
+                                        подписываясь на новости, вы автоматически
+                                        соглашаетесь с <a class="photo__form-link" href="#">условиями обработки
+                                            персональных данных</a> и <a class="photo__form-link" href="#">правилами
+                                            рекламных рассылок</a>
+                                    </label>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__inner">
+                    <div class="footer__desc">
+                        <div class="footer__desc-title footer__title">Компания «РумТибет»</div>
+                        <p class="footer__content">Его корни уходят в один фрагмент классической латыни 45 года н.э., то
+                            есть более двух тысячелетий назад. Ричард МакКлинток, профессор латыни из колледжа
+                            Hampden-Sydney.</p>
+                        <div class="footer__info">
+                            <div class="footer__contact">
+                                <a class="footer__contact-link footer__mail" href="#">info@domain.com</a>
+                                <a class="footer__contact-link footer__tel" href="#">+7 (123) 456-78-90</a>
+                            </div>
+                            <ul class="footer__social">
+                                <li class="footer__social-item">
+                                    <a class="footer__social-link" href="#">
+                                        <img src="img/social-icons/telegram.svg" alt="telegram"
+                                            class="footer__social-icon">
+                                    </a>
+                                </li>
+                                <li class="footer__social-item">
+                                    <a class="footer__social-link" href="#">
+                                        <img src="img/social-icons/vk.svg" alt="vk" class="footer__social-icon">
+                                    </a>
+                                </li>
+                                <li class="footer__social-item">
+                                    <a class="footer__social-link" href="#">
+                                        <img src="img/social-icons/pinterest.svg" alt="pinterest"
+                                            class="footer__social-icon">
+                                    </a>
+                                </li>
+                                <li class="footer__social-item">
+                                    <a class="footer__social-link" href="#">
+                                        <img src="img/social-icons/skype.svg" alt="skype" class="footer__social-icon">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer__details">
+                        <div class="footer__service">
+                            <div class="footer__details-title footer__title">Наши услуги</div>
+                            <ul class="footer__list footer__service-list">
+                                <li class="footer__service-item footer__item">
+                                    <a class="footer__service-link footer__link" href="#">Прогулки в горы летом</a>
+                                </li>
+                                <li class="footer__service-item footer__item">
+                                    <a class="footer__service-link footer__link" href="#">Зимние походы в горы</a>
+                                </li>
+                                <li class="footer__service-item footer__item">
+                                    <a class="footer__service-link footer__link" href="#">Посещение храмов в горах</a>
+                                </li>
+                                <li class="footer__service-item footer__item">
+                                    <a class="footer__service-link footer__link" href="#">Экстремальные виды туризма</a>
+                                </li>
+                                <li class="footer__service-item footer__item">
+                                    <a class="footer__service-link footer__link" href="#">Походы в джунглях Амазонии</a>
+                                </li>
+                                <li class="footer__service-item footer__item">
+                                    <a class="footer__service-link footer__link" href="#">Поездка в Африку</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer__info">
+                            <div class="footer__info-title footer__title">Важно для путешествий</div>
+                            <ul class="footer__list footer__info-list">
+                                <li class="footer__info-item footer__item">
+                                    <a class="footer__info-link footer__link" href="#">Как собрать в долгий поход?</a>
+                                </li>
+                                <li class="footer__info-item footer__item">
+                                    <a class="footer__info-link footer__link" href="#">Жизненно важные предметы для
+                                        похода</a>
+                                </li>
+                                <li class="footer__info-item footer__item">
+                                    <a class="footer__info-link footer__link" href="#">Медицинская страховка, гарантии
+                                        безопасности</a>
+                                </li>
+                                <li class="footer__info-item footer__item">
+                                    <a class="footer__info-link footer__link" href="#">Если вы врач - загляните сюда</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__row">
+                <div class="container">
+                    <div class="footer__row-inner">
+                        <span class="footer__name">ИП Константинопольский К.К., 2023</span>
+                        <a class="footer__row-link" href="#">Политика обработки персональных данных</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="JS/index.js"></script>
+</body>
+
+</html>
